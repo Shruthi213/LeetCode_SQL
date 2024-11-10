@@ -1,5 +1,5 @@
 # LeetCode_SQL
-This Repository have Leetcode SQL problems and answers
+This Repository have Leetcode SQL Questions and answers
 ### Question1:
 Table: Employee
 Write a solution to find managers with at least five direct reports.
