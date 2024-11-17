@@ -23,3 +23,9 @@ The result format is in the following example.
 select product_id 
 from Products 
 where low_fats = 'Y' and recyclable = 'Y'
+### Question4:
+Find the names of the customer that are not referred by the customer with id = 2.
+Return the result table in any order.
+#### Answer:
+select name from Customer
+where referee_id != 2 or referee_id is null;
