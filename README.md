@@ -39,3 +39,14 @@ Return the result table in any order.
 select name, population, area
 from world
 where area >= 3000000 or population >= 25000000;
+### Question6:
+Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+Return the result table in any order.
+The query result format is in the following example.
+#### Answer:
+select p.product_id, coalesce(round(sum(p.price*u.units)/sum(u.units), 2), 0) as average_price
+from prices as p
+left join unitssold as u
+on p.product_id = u.product_id AND u.purchase_date BETWEEN p.start_date AND p.end_date
+group by p.product_id
+order by product_id
