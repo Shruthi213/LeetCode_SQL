@@ -33,4 +33,7 @@ The result format is in the following example
 Write a solution to report the movies with an odd-numbered ID and a description that is not "boring".
 Return the result table ordered by rating in descending order.
 The result format is in the following example.
-
+### Question 9 :Project Employees I
+Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+Return the result table in any order.
+The query result format is in the following example.
