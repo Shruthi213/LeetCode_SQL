@@ -65,7 +65,7 @@ group by activity_date
 select * from Cinema 
 where id%2 != 0 and description != 'boring'
 order by rating desc
-----Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+----Question9:Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
 ----Return the result table in any order.
 ----The query result format is in the following example.
 select p.project_id, round(avg(e.experience_years), 2) as average_years
