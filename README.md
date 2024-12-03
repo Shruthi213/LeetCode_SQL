@@ -37,3 +37,8 @@ The result format is in the following example.
 Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
 Return the result table in any order.
 The query result format is in the following example.
+### Question 10: Article Views I
+Write a solution to find all the authors that viewed at least one of their own articles.
+Return the result table sorted by id in ascending order.
+The result format is in the following example.
+
