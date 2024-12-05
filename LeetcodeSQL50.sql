@@ -81,3 +81,9 @@ select distinct(author_id) as id
 from views
 where author_id = viewer_id
 Order By id asc;
+-----Question 11: Replace Employee ID With The Unique Identifier
+-----Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null. Return the result table in any order. The result format is in the following example.
+select unique_id, name
+from Employees as emp
+left join employeeuni as uni
+on emp.id = uni.id
