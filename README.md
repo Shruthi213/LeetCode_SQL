@@ -41,4 +41,7 @@ The query result format is in the following example.
 Write a solution to find all the authors that viewed at least one of their own articles.
 Return the result table sorted by id in ascending order.
 The result format is in the following example.
-
+### Question 11: Replace Employee ID With The Unique Identifier
+Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
+Return the result table in any order.
+The result format is in the following example.
