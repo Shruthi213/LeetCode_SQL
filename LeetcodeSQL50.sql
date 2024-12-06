@@ -87,3 +87,13 @@ select unique_id, name
 from Employees as emp
 left join employeeuni as uni
 on emp.id = uni.id
+### Question 12: Average Selling Price
+---Write a solution to find the average selling price for each product. average_price should be rounded to 2 decimal places. If a product does not have any sold units, its average selling price is assumed to be 0.
+---Return the result table in any order.
+---The result format is in the following example.
+select p.product_id, coalesce(round(sum(p.price*u.units)/sum(u.units), 2), 0) as average_price
+from prices as p
+left join unitssold as u
+on p.product_id = u.product_id AND u.purchase_date BETWEEN p.start_date AND p.end_date
+group by p.product_id
+order by product_id
