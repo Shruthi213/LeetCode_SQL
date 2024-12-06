@@ -45,3 +45,7 @@ The result format is in the following example.
 Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
 Return the result table in any order.
 The result format is in the following example.
+### Question 12: Average Selling Price
+Write a solution to find the average selling price for each product. average_price should be rounded to 2 decimal places. If a product does not have any sold units, its average selling price is assumed to be 0.
+Return the result table in any order.
+The result format is in the following example.
