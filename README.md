@@ -1,7 +1,7 @@
 # LeetCode_SQL
 This Repository have Leetcode SQL Questions and answers
 In this Readme file has SQL Questions and I have added SQL file in that file you can found SQL with answer sets.
-### Question1:
+### Question1:Managers with at Least 5 Direct Reports
 Write a solution to find managers with at least five direct reports.
 Return the result table in any order.
 The result format is in the following example.
