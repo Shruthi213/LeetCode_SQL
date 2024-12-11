@@ -25,7 +25,7 @@ Return the result table in any order.
 Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
 Return the result table in any order.
 The query result format is in the following example.
-### Question7: 
+### Question7: User Activity for the Past 30 Days I
 Write a solution to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on someday if they made at least one activity on that day.
 Return the result table in any order.
 The result format is in the following example
