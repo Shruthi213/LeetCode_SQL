@@ -49,3 +49,5 @@ The result format is in the following example.
 Write a solution to find the average selling price for each product. average_price should be rounded to 2 decimal places. If a product does not have any sold units, its average selling price is assumed to be 0.
 Return the result table in any order.
 The result format is in the following example.
+### Question 13 : Second Highest Salary
+Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null (return None in Pandas)
