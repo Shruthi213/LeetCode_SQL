@@ -97,3 +97,8 @@ left join unitssold as u
 on p.product_id = u.product_id AND u.purchase_date BETWEEN p.start_date AND p.end_date
 group by p.product_id
 order by product_id
+### Question 13: Second Highest Salary
+----Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null (return None in Pandas)
+select Max(distinct salary) as SecondHighestSalary
+from Employee
+where salary < (select Max(salary) from Employee)
