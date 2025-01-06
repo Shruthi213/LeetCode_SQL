@@ -112,3 +112,13 @@ Return the result table ordered by score in descending order.
 select score ,
 dense_rank() over(Order By score desc) 'rank'
 from Scores
+### Question 15:Consecutive Numbers
+---Find all numbers that appear at least three times consecutively.
+---Return the result table in any order.
+---The result format is in the following example.
+select distinct l1.num as ConsecutiveNums
+from Logs l1, Logs l2, Logs l3
+where l1.num = l2.num and l2.num = l3.num
+and l1.id = l2.id -1
+and l1.id = l3.id -2
+  
