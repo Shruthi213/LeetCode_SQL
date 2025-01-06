@@ -47,6 +47,12 @@ Return the result table in any order.
 The result format is in the following example.
 ### Question 12: Average Selling Price
 Write a solution to find the average selling price for each product. average_price should be rounded to 2 decimal places. If a product does not have any sold units, its average selling price is assumed to be 0.
+### Question 13: Rank Scores
+Write a solution to find the rank of the scores. The ranking should be calculated according to the following rules:
+The scores should be ranked from the highest to the lowest.
+If there is a tie between two scores, both should have the same ranking.
+After a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no holes between ranks.
+Return the result table ordered by score in descending order.
 Return the result table in any order.
 The result format is in the following example.
 ### Question 13 : Second Highest Salary
