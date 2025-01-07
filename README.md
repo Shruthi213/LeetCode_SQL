@@ -61,3 +61,7 @@ Return the result table in any order.
 The result format is in the following example.
 Return the result table in any order.
 The result format is in the following example.
+### Question 16:  Department Highest Salary
+Write a solution to find employees who have the highest salary in each of the departments.
+Return the result table in any order.
+The result format is in the following example.
