@@ -121,4 +121,14 @@ from Logs l1, Logs l2, Logs l3
 where l1.num = l2.num and l2.num = l3.num
 and l1.id = l2.id -1
 and l1.id = l3.id -2
-  
+###Question 16: Department Highest Salary
+--- Write a solution to find employees who have the highest salary in each of the departments.
+---Return the result table in any order.
+---The result format is in the following example.  
+select d.name as Department, e.name as Employee ,e.salary as Salary
+from Employee e
+join Department d
+on e.departmentId = d.id
+where (d.id, e.salary) in (SELECT DepartmentId, max(Salary)
+from Employee
+group by DepartmentID)
