@@ -132,3 +132,14 @@ on e.departmentId = d.id
 where (d.id, e.salary) in (SELECT DepartmentId, max(Salary)
 from Employee
 group by DepartmentID)
+### Question 17: Game Play Analysis IV
+---Write a solution to report the fraction of players that logged in again on the day after the day they first logged in, rounded to 2 decimal places. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date, then divide that number by the total number of players.
+---The result format is in the following example.
+with cte as (select player_id, min(event_date) as First_loggin
+from Activity
+group by player_id)
+select round(1.0*SUM(CASE WHEN DATEDIFF(day, First_loggin, event_date) = 1 THEN 1 ELSE 0 END) /
+Count(distinct A.player_id), 2) as fraction
+from Activity as A 
+inner join cte as c
+on A.player_id = c.player_id
