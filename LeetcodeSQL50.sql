@@ -143,3 +143,8 @@ Count(distinct A.player_id), 2) as fraction
 from Activity as A 
 inner join cte as c
 on A.player_id = c.player_id
+### Question 18: Managers with at Least 5 Direct Reports
+--Write a solution to find managers with at least five direct reports.
+--Return the result table in any order.The result format is in the following example.
+select name from Employee
+where id in (select managerId from Employee group by managerID having Count(*) >= 5)
