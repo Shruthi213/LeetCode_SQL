@@ -162,4 +162,24 @@ count(*) over(partition by tiv_2015) as condition1,
 count(*) over(partition by lat, lon) as condition2
 from Insurance) as subquery
 where condition1 > 1 and condition2 = 1
+### Question 20 : Friend Requests II: Who Has the Most Friends
+--Write a solution to find the people who have the most friends and the most friends number.
+--The test cases are generated so that only one person has the most friends.
+--The result format is in the following example.
+select id, sum(num) as num
+from (
+    select requester_id as id ,
+    count(*) as num 
+    from RequestAccepted
+    group by requester_id
+
+    Union all
+
+    select accepter_id as id ,
+    count(*) as num 
+    from RequestAccepted
+    group by accepter_id) as subquery 
+group by id
+order by num desc
+limit 1
 
