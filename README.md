@@ -78,3 +78,7 @@ have the same tiv_2015 value as one or more other policyholders, and
 are not located in the same city as any other policyholder (i.e., the (lat, lon) attribute pairs must be unique).
 Round tiv_2016 to two decimal places.
 The result format is in the following example.
+### Question 20 : Friend Requests II: Who Has the Most Friends
+Write a solution to find the people who have the most friends and the most friends number.
+The test cases are generated so that only one person has the most friends.
+The result format is in the following example.
