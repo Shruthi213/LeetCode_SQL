@@ -82,3 +82,7 @@ The result format is in the following example.
 Write a solution to find the people who have the most friends and the most friends number.
 The test cases are generated so that only one person has the most friends.
 The result format is in the following example.
+### Question 21: Customers Who Bought All Products
+Write a solution to report the customer ids from the Customer table that bought all the products in the Product table.
+Return the result table in any order.
+The result format is in the following example.
