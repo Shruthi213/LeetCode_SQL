@@ -86,3 +86,7 @@ The result format is in the following example.
 Write a solution to report the customer ids from the Customer table that bought all the products in the Product table.
 Return the result table in any order.
 The result format is in the following example.
+### Question 22: Product Sales Analysis III
+Write a solution to select the product id, year, quantity, and price for the first year of every product sold.
+Return the resulting table in any order.
+The result format is in the following example.
